@@ -1,0 +1,658 @@
+id	name	city	state	country
+92	University of Alberta	Edmonton	AB	Canada
+108	Macalester College	St. Paul	MN	USA
+141	University of Illinois at Chicago	Chicago	IL	USA
+195	Rice University	Houston	TX	USA
+245	State University of New York at Buffalo	Buffalo	NY	USA
+256	Carnegie Mellon University	Pittsburgh	PA	USA
+268	Marquette University	Milwaukee	WI	USA
+294	Davidson College	Davidson	NC	USA
+332	Franklin and Marshall College	Lancaster	PA	USA
+519	Eastern Michigan University	Ypsilanti	MI	USA
+574	Montana State University	Bozeman	MT	USA
+649	Kobe University	Kobe	(null)	Japan
+696	Trinity College, Dublin	Dublin	(null)	IRELAND
+752	University of Wisconsin at Oshkosh	Oshkosh	WI	USA
+937	Siena College	Loudonville	NY	USA
+954	John Carroll University	University Heights	OH	USA
+1416	University of Tampere	Tampere	(null)	Finland
+1430	Saint Olaf College	Northfield	MN	USA
+1432	Clemson University	Clemson	SC	USA
+1514	Amherst College	Amherst	MA	USA
+1956	Centre College	Danville	KY	USA
+2326	Widener University	Chestor 	PA	USA
+3030	Swiss Foundation for Research in the Social Sciences (FORS)	Neuchatel	(null)	Switzerland
+3059	Ajou University	Suwon	Gyeonggi-do	SOUTH KOREA
+7286	Hosei University	Tokyo	(null)	Japan
+7573	Kyung Hee University	Seoul	(null)	Korea
+7694	Seoul National University	Seoul	(null)	Korea
+8620	Ithaca College	Ithaca	NY	USA
+9326	Dominican University	River Forest	IL	USA
+10395	Korea University	Seoul	(null)	South Korea
+11188	Economics Education and Research Consortium (EERC)	Moscow	(null)	Russia
+11243	Belmont University	Nashville	TN	USA
+11280	CUNY Graduate School of Journalism	New York	NY	USA
+11327	Ecole Normale Superieure de Lyon	Lyon	(null)	France
+11363	University of Mount Union	Alliance	OH	USA
+13210	Yamaguchi University	Yamaguchi	(null)	JAPAN
+13690	Bureau of Economic Analysis	Washington	DC	USA
+13790	Chonbuk National University	Jeonju	(null)	SOUTH KOREA
+13837	Roger Williams University	Bristol	RI	USA
+14010	Mount Saint Marys University	Emmitsburg	MD	USA
+14050	Baekseok Culture University	Cheonan	Chungnam	South Korea
+14130	American University of Beirut	Beirut	(null)	LEBANON
+14190	Cedarville University	Cedarville 	OH	USA
+14470	W.E. Upjohn Institute for Employment Research	Kalamazoo	MI	USA
+53	San Diego State University	San Diego	CA	USA
+63	Kansas State University	Manhattan	KS	USA
+67	Eastern Illinois University	Charleston	IL	USA
+71	Washington and Lee University	Lexington	VA	USA
+79	University of Central Florida	Orlando	FL	USA
+83	University of Connecticut	Storrs	CT	USA
+180	Haverford College	Haverford	PA	USA
+185	College of William and Mary	Williamsburg	VA	USA
+238	Doshisha University	Kyoto	(null)	Japan
+273	Vassar College	Poughkeepsie	NY	USA
+276	University of Toronto	Toront	ON	Canada
+278	University of Colorado at Boulder	Boulder	CO	USA
+283	Bowdoin College	Brunswick	ME	USA
+288	Xavier University of Louisiana	New Orleans	LA	USA
+297	Tufts University	Medford	MA	USA
+319	University of Hawaii at Manoa	Honolulu	HI	USA
+356	University of Nevada at Las Vegas	Las Vegas	NV	USA
+404	University of Northern British Columbia	Prince George, BC	BC	Canada
+513	University of Maryland Baltimore County	Baltimore	MD	USA
+608	Grand Valley State University	Allendale	MI	USA
+614	Richard Stockton College of New Jersey	Pomona	NJ	USA
+616	Laval Universite	Ste-Foy	QC	Canada
+710	Federal Reserve Bank of Dallas	Dallas	TX	USA
+782	South Dakota State University	Brookings	SD	USA
+848	Queen's University	Kingston	ON	Canada
+877	Susquehanna University	Selinsgrove	PA	USA
+917	Case Western Reserve University	Cleveland	OH	USA
+936	State University of New York College at Old Westbury	Old Westbury	NY	USA
+942	Lake Forest College	Lake Forest	IL	USA
+961	University of Colorado at Colorado Springs	Colorado Springs	CO	USA
+1630	Niagara University	Niagara University	NY	USA
+1683	Tohoku University	Semdai-shi	(null)	Japan
+1742	Ryerson University	Toronto	ON	Canada
+1972	Pontificia Universidad Catolica de Chile	Santiago	(null)	CHILE
+2238	Utrecht University	Utrecht	(null)	The Netherlands
+2611	Sookmyung Women's University	Seoul	(null)	Korea
+7528	Universita Commerciale L. Bocconi	Milano	(null)	Italy
+8603	California Lutheran University	Thousand Oaks	CA	USA
+10313	High Point University	High Point	NC	USA
+10556	Federal Reserve Bank of Minneapolis	Minneapolis	MN	USA
+11189	European Centre for Social Welfare Policy and Research	Vienna	(null)	Austria
+11213	Universidad de la Republica	Montevideo	(null)	Uruguay
+11	University of Michigan	Ann Arbor	MI	USA
+29	California State University, East Bay	Hayward	CA	USA
+41	California State University at Los Angeles	Los Angeles	CA	USA
+51	California State University at Sacramento	Sacramento	CA	USA
+70	University of Windsor	Windsor	ON	Canada
+81	Florida Atlantic University	Jupiter	FL	USA
+111	GESIS ? Leibniz Institute for the Social Sciences	Koln	(null)	Germany
+138	University of North Texas	Denton	TX	USA
+139	Wesleyan University	Middletown	CT	USA
+222	University of Texas at Dallas	Richardson	TX	USA
+226	University of Memphis	Memphis	TN	USA
+266	Colgate University	Hamilton	NY	USA
+341	Portland State University	Portland	OR	USA
+350	Wellesley College	Wellesley	MA	USA
+392	North Carolina Central University	Durham	NC	USA
+540	Ball State University	Muncie	IN	USA
+549	Bucknell University	Lewisburg	PA	USA
+583	Gettysburg College	Gettysburg	PA	USA
+691	Kent State University	Kent	OH	USA
+1026	Mount Holyoke College	South Hadley	MA	USA
+1300	Connecticut College	New London	CT	USA
+1334	Bradley University	Preoria	IL	USA
+1354	Middlebury College	Middlebury	VT	USA
+1502	Hendrix College	Conway	AR	USA
+1785	Elizabethtown College	Elizabethtown	PA	USA
+2161	University of Northern Iowa	Cedar Falls	IA	USA
+3043	Rikkyo University	Tokyo	(null)	Japan
+3346	Walden University	Minneapolis	MN	USA
+7995	National University of Ireland, Galway	Galway	(null)	IRLEAND
+8628	Medical College of Wisconsin	Milwaukee	WI	USA
+9340	Messiah College	Grantham	PA	USA
+10004	Tokyo Metropolitan University	Tokyo	(null)	JAPAN
+10379	Hanyang University	Seoul	(null)	South Korea
+10878	Whittier College	Whittier	CA	USA
+11228	Mount St. Mary's College Los Angeles	Los Angeles	CA	USA
+11259	Politieacademie	Apeldoorn	(null)	The Netherlands
+11772	Institute for Social Research	Vilnius	(null)	Lithuania
+13350	Catholic University of Korea	Bucheon	Gyeonggi-do	KOREA
+13370	Dongduk  Womens University	Seoul	(null)	KOREA
+14210	Federal Reserve Bank of Richmond	Richmond	VA	USA
+14290	Georgia Gwinnett College	Lawrenceville	GA	USA
+3	University of Chicago	Chicago	IL	USA
+5	Georgetown University	Washington	DC	USA
+13	University of Minnesota	Minneapolis	MN	USA
+35	Ohio State University	Columbus	OH	USA
+48	University of Maryland College Park	College Park	MD	USA
+49	California State Polytechnic University at Pomona	Pomona	CA	USA
+54	San Francisco State University	San Francisco	CA	USA
+55	San Jose State University	San Jose	CA	USA
+56	McMaster University	Hamilton	ON	Canada
+65	Chicago State University	Chicago	IL	USA
+80	Purdue University	West Lafayette	IN	USA
+88	Washington State University	Pullman	WA	USA
+101	Denison University	Granville	OH	USA
+107	University of Wisconsin at Milwaukee	Milwaukee	WI	USA
+140	University of Delaware	Newark	DE	USA
+146	Stockholm University	Stockholm	(null)	Sweden
+205	University of Utah	Salt Lake City	UT	USA
+227	Oklahoma State University	Stillwater	OK	USA
+246	College of Staten Island	Staten Island	NY	USA
+252	University of Wyoming	Laramie	WY	USA
+429	Aoyama Gakuin University	Tokyo 150-8366	(null)	Japan
+541	Creighton University	Omaha	NE	USA
+763	Indiana University-Purdue University at Indianapolis	Indianapolis	IN	USA
+1246	University of Minnesota at Morris	Morris	MN	USA
+1431	Millsaps College	Jackson	MS	USA
+1812	Texas A&M University - Corpus Christi	Corpus Christi	TX	USA
+1905	California State University at Fullerton	Fullerton	CA	USA
+2015	University of Guelph	Guelph	ON	Canada
+2077	Southwestern University	Georgetown	TX	USA
+2099	Indiana State University	Terre Haute	IN	USA
+2118	Florida A&M University	Tallahassee	FL	USA
+3083	Dankook University	Seoul	(null)	Korea
+11024	Kansai University	Osaka	(null)	Japan
+11204	Lee University	Cleveland	TN	USA
+11229	University of Hawaii at Hilo	Hilo	HI	USA
+11510	College of Saint Benedict/Saint John's University	Collegeville	MN	USA
+12490	Chung Ang University	Seoul	(null)	KOREA
+13390	Renmin University	Beijing	(null)	CHINA
+14430	St. Thomas University	Miami Gardens	FL	USA
+50	Allegheny College	Meadville	PA	USA
+64	California State University at Stanislaus	Turlock	CA	USA
+69	Rutgers-The State University of New Jersey	New Brunswick	NJ	USA
+93	The American University	Washington	DC	USA
+103	Hope College	Holland	MI	USA
+104	University of California at Davis	Davis	CA	USA
+115	Georgia State University	Atlanta	GA	USA
+129	University of Massachusetts at Amherst	Amherst	MA	USA
+150	California Institute of Technology	Pasadena	CA	USA
+155	University of Akron	Akron	OH	USA
+184	University of Virginia	Charlottesville	VA	USA
+208	Texas Tech University	Lubbock	TX	USA
+230	Fordham University	Bronx	NY	USA
+234	Hunter College	New York	NY	USA
+255	Western Michigan University	Kalamazoo	MI	USA
+279	University of California at Irvine	Irvine	CA	USA
+311	Howard University	Washington	DC	USA
+320	Wittenberg University	Springfield	OH	USA
+335	University of Calgary	Calgary	AB	Canada
+361	Winona State University	Winona	MN	USA
+375	Federal Reserve Bank of Boston	Boston	MA	USA
+454	Universite De Paris I	Paris	(null)	France
+498	ICPSR STAFF	Ann Arbor	MI	USA
+511	University of Montana	Missoula	MT	USA
+558	North Carolina Agricultural and Technical State University	Greensboro	NC	USA
+604	Wright State University	Dayton	OH	USA
+802	University of Massachusetts at Boston	Boston	MA	USA
+821	Rush University	Chicago	IL	USA
+831	Indiana University-Purdue University at Fort Wayne	Fort Wayne	IN	USA
+972	College of the Holy Cross	Worcester	MA	USA
+1005	Dalhousie University	Halifax	NS	Canada
+1085	University of the South	Sewanee	TN	USA
+1165	Monmouth College	Monmouth 	IL	USA
+1262	Macomb Community College	Warren	MI	USA
+1453	Furman University	Greenville	SC	USA
+1557	University College Dublin	Dublin	(null)	IRELAND
+1756	Western Carolina University	Cullowhee	NC	USA
+1977	Universita degli Studi di Milano Bicocca	20126 Milano	(null)	Italy
+2256	University of South Dakota	Vermillion	SD	USA
+2273	Texas A&M International University	Laredo	TX	USA
+2297	Fitchburg State College	Fitchburg	MA	USA
+2302	Sinclair Community College	Dayton	OH	USA
+2554	University of Oxford	Oxford	(null)	United Kingdom
+3051	Universita degli Studi di Salerno	84084 Fisciano (SA)	(null)	Italy
+3284	Agency for Healthcare Research and Quality	Rockville	MD	USA
+3573	York College City University of New York	Jamaica	NY	USA
+7386	Pusan National University	Pusan	(null)	Korea
+11177	Daegu University	Gyongsan City	(null)	Korea
+11212	University of California at Merced	Merced	CA	USA
+11269	Ecole Normale Superieure de Paris	Paris	(null)	France
+11315	Graz University of Technology	Graz	(null)	Austria
+11323	Bank for International Settlements	Basel	(null)	Switzerland
+14390	New Economic School	Moscow	(null)	RUSSIA
+14572	Mokpo National University Library	Chungkye-myon	Jeonnam	SOUTH KOREA
+6	University of Illinois at Urbana-Champaign	Urbana	IL	USA
+12	Michigan State University	East Lansing	MI	USA
+18	Southern Illinois University at Carbondale	Carbondale	IL	USA
+36	California State University at Long Beach	Long Beach	CA	USA
+59	California Polytechnic State University at San Luis Obispo	San Luis Obispo	CA	USA
+95	Carleton College	Northfield	MN	USA
+100	Cornell College	Vernon	IA	USA
+166	University of Nebraska at Lincoln	Lincoln	NE	USA
+178	Cleveland State University	Cleveland	OH	USA
+242	State University of New York at Albany	Albany	NY	USA
+269	University of North Carolina at Charlotte	Charlotte	NC	USA
+277	Colby College	Waterville	ME	USA
+314	University of Mississippi	University	MS	USA
+321	Muhlenberg College	Allentown	PA	USA
+328	United States Naval Academy	Annapolis	MD	USA
+333	Lafayette College	Easton	PA	USA
+393	Southern University -- Baton Rouge	Baton Rouge	LA	USA
+446	University of Ottawa	Ottawa, ON	ON	Canada
+727	University of Waterloo	Waterloo, Ontario N2L 3G1	ON	Canada
+847	University of Hong Kong	Hong Kong	(null)	China
+957	University of Colorado, Denver	Denver	CO	USA
+1542	Korean Social Science Data Center	Seoul	(null)	Korea
+1549	Public Policy Institute of California	San Francisco	CA	USA
+1730	Inha University	Incheon	(null)	South Korea
+1904	Centro de Investigaciones Sociologicas	28014 Madrid	(null)	SPAIN
+1989	California State University Monterey Bay	Seaside	CA	USA
+2223	University of Nijmegen	Nijmegen	(null)	The Netherlands
+3549	Brigham Young University - Hawaii	Laie	HI	USA
+10002	Kwansei Gakuin University	Hyogo	(null)	Japan
+11221	Nederlands Inter-universitair Demografisch Instituut	The Hague	(null)	The Netherlands
+11240	University of KwaZulu-Natal	Durban	Durban	South Africa
+11275	Hostos Community College	Bronx	NY	USA
+11283	LaGuardia College	LaGuardia	NY	USA
+11294	Institute of Social Studies	The Hague	(null)	Russia
+11990	Universite de Lille	Lille	(null)	France
+13670	Induk University	Seoul	Nowon-gu	South Korea
+14150	Osaka City University	Osaka	(null)	Japan
+14570	Hankyong National University	Anseong-si	Gyeonggi-do	SOUTH KOREA
+7	Indiana University	Bloomington	IN	USA
+8	University of Iowa	Iowa City	IA	USA
+24	Wayne State University	Detroit	MI	USA
+45	Harvard University	Cambridge	MA	USA
+57	Carleton University	Ottawa Ontario	ON	Canada
+58	University of Notre Dame	Notre Dame	IN	USA
+78	University of Florida	Gainesville	FL	USA
+87	University of South Florida	Tampa	FL	USA
+89	University of West Florida	Pensacola	FL	USA
+125	University of South Carolina	Columbia	SC	USA
+187	Union College	Schenectady	NY	USA
+191	Baylor University	Waco	TX	USA
+313	The Brookings Institution	Washington	DC	USA
+325	Spelman College	Atlanta	GA	USA
+334	Boston University	Boston	MA	USA
+363	Southwest State University	Marshall	MN	USA
+403	University of Lethbridge	Lethbridge	AB	Canada
+460	University of Maryland at Baltimore	Baltimore	MD	USA
+534	University of Tennessee at Chattanooga	Chattanooga	TN	USA
+581	Brock University	St. Catharine's	ON	Canada
+644	University of Victoria	Victoria	BC	Canada
+728	The Rand Corporation	Santa Monica	CA	USA
+832	Manhattan College	Bronx	NY	USA
+900	University of Nebraska at Omaha	Omaha	NE	USA
+959	Western Washington University	Bellingham	WA	USA
+1066	Kyoto University	KYOTO	(null)	JAPAN
+1159	Elon University	Elon	NC	USA
+1170	Santa Clara University	Santa Clara	CA	USA
+1515	University of Denver	Denver	CO	USA
+1871	Ewha Womans University	Seoul	(null)	KOREA
+1962	Medical University of South Carolina	Charleston	SC	USA
+2028	Sogang University	Seoul	(null)	Korea
+3088	Paichai University	Daejeon City	(null)	Korea
+6390	Moody Bible Institute	Chicago	IL	USA
+8607	Chapman University	Orange	CA	USA
+10079	Mount Royal College	Calgary	Alberta	CANADA
+11279	CUNY School of Law	Flushing	NY	USA
+11287	Norwalk Community College	Norwalk	CT	USA
+11372	Universite de Versailles Saint Quentin en Yvelines	Guyancourt	(null)	France
+13371	Seoul Womens University	Seoul	(null)	KOREA
+13750	Liberty Mutual Research Institute for Safety	Hopkinton	MA	USA
+14590	Hannam University	Daeduk-gu Daejon	(null)	SOUTH KOREA
+14	California State University at Dominguez Hills	Carson	CA	USA
+21	Vanderbilt University	Nashville	TN	USA
+34	New York University	New York	NY	USA
+42	University of Arizona	Tucson	AZ	USA
+66	Arizona State University	Tempe	AZ	USA
+90	Albion College	Albion	MI	USA
+99	Colorado College	Colorado Springs	CO	USA
+189	University of Zurich	Zurich	(null)	Switzerland
+231	The Graduate Center, The City University of New York	New York	NY	USA
+232	University of Toledo	Toledo	OH	USA
+241	East Carolina University	Greenville	NC	USA
+254	Reed College	Portland	OR	USA
+261	Illinois State University at Normal	Normal	IL	USA
+263	University of California at San Diego	La Jolla	CA	USA
+284	Wheaton College	Wheaton	IL	USA
+308	University of Wisconsin at Eau Claire	Eau Claire	WI	USA
+349	University of California at Santa Cruz	Santa Cruz	CA	USA
+384	Nassau Community College	Garden City	NY	USA
+550	University of North Carolina at Pembroke	Pembroke	NC	USA
+632	National University of Singapore	Singapore	(null)	Singapore
+684	Concordia University	Montreal	Quebec	CANADA
+886	Boise State University	Boise	ID	USA
+1531	Changwon National University	Changwon-si	Kyeongsangnamdo	SOUTH KOREA
+1615	Universita degli Studi di Siena	53100 Siena	(null)	Italy
+1729	University of New Brunswick	Fredericton, New Brunswick	NB	Canada
+1795	University of Massachusetts at Dartmouth	Dartmouth	MA	USA
+1988	Fort Valley State University	Fort Valley	GA	USA
+2178	Chinese University of Hong Kong	Hong Kong	(null)	Hong Kong
+2233	University of Twente	Enschede	(null)	The Netherlands
+2335	Skidmore College	Saratoga Springs	NY	USA
+3029	Fo Guang University	Jiaushi Shiang, I-Lan	(null)	Taiwan
+3050	Universita degli Studi del Piemonte Orientale	15100 Alessandria	(null)	Italy
+9558	Universitat Innsbruck	Innsbruck	(null)	Austria
+10280	University of Vienna	Vienna	(null)	Austria
+10336	Universita Ca' Foscari di Venezia	Venezia	(null)	Italy
+11014	University of Cyprus	Nicosia	(null)	Cyprus
+11278	Medgar Evers College	Brooklyn	NY	USA
+11870	Dongguk University	SEOUL	(null)	Korea
+12570	Cape Breton University	Sydney	Nova Scotia	CANADA
+12670	State University - Higher School of Economics	Moscow	(null)	RUSSIA
+13270	Stonehill College	Easton	MA	USA
+15	University of North Carolina at Chapel Hill	Chapel Hill	NC	USA
+16	Northwestern University	Evanston	IL	USA
+22	Washington University in St. Louis	St. Louis	MO	USA
+44	Columbia University	New York	NY	USA
+75	University of Cincinnati	Cincinnati	OH	USA
+98	Louisiana State University	Baton Rouge	LA	USA
+121	University of Amsterdam	Amsterdam	(null)	The Netherlands
+170	George Washington University	Washington	DC	USA
+194	University of Texas, Pan American	Edinburg	TX	USA
+239	John Jay College of Criminal Justice	New York	NY	USA
+290	City University of New York Federation	New York	NY	USA
+298	Morehouse College	Atlanta	GA	USA
+306	State University of New York at Potsdam	Potsdam	NY	USA
+425	University of Minnesota Duluth	Duluth	MN	USA
+499	Library of Congress	Washington	DC	USA
+539	Appalachian State University	Boone	NC	USA
+557	Dickinson College	Carlisle	PA	USA
+601	Luther College	Decorah	IA	USA
+1101	Hartwick College	Oneonta	NY	USA
+1221	Universita degli Studi di Bologna	40125 Bologna	(null)	Italy
+1447	University Of Wisconsin at La Crosse	La Crosse	WI	USA
+1692	Illinois Wesleyan University	Bloomington	IL	USA
+2036	Yonsei University	Seoul	(null)	Korea
+3428	Konkuk University	Seoul	(null)	South Korea
+7427	University of Limerick	Limerick	(null)	IRELAND
+7470	Universiteit Maastricht	Maastricht	(null)	The Netherlands
+9678	Klaipeda University	Klaipeda	(null)	LITHUANIA
+10277	University of Nottingham	University Park	(null)	United Kingdom
+10634	Korea Advanced Institute of Science and Technology	Daejeon	(null)	South Korea
+11298	University of the Thai Chamber of Commerce	Bangkok	(null)	Thailand
+4	California State University at Chico	Chico	CA	USA
+9	University of Kansas	Lawrence	KS	USA
+19	Princeton University	Princeton	NJ	USA
+31	Humboldt State University	Arcata	CA	USA
+38	University of Tennessee at Knoxville	Knoxville	TN	USA
+68	University of California at Santa Barbara	Santa Barbara	CA	USA
+73	University of Western Ontario	London Ontario  N6A 5C2	ON	Canada
+132	Virginia Polytechnic Institute and State University	Blacksburg	VA	USA
+144	University of Vermont	Burlington	VT	USA
+181	University of Pennsylvania	Philadelphia	PA	USA
+182	Swarthmore College	Swarthmore	PA	USA
+221	Hamilton College	Clinton	NY	USA
+233	Loyola University of Chicago	Chicago	IL	USA
+237	University of Oregon	Eugene	OR	USA
+253	Brooklyn College	Brooklyn	NY	USA
+260	Trinity College	Hartford	CT	USA
+302	North Carolina State University	Raleigh	NC	USA
+315	Simon Fraser University	Burnaby, British Columbia	BC	Canada
+331	University of Nevada at Reno	Reno	NV	USA
+426	Lewis and Clark College	Portland	OR	USA
+599	Keio University	Tokyo	(null)	Japan
+615	University of Tokyo	Tokyo 113-0033	(null)	Japan
+716	University of the Pacific	Stockton	CA	USA
+735	Federal Reserve Bank of Cleveland	Cleveland	OH	USA
+787	York College of Pennsylvania	York	PA	USA
+805	University of Dayton	Dayton	OH	USA
+928	University of Texas at El Paso	El Paso	TX	USA
+953	University of Richmond	Richmond	VA	USA
+1517	Austin College	Sherman	TX	USA
+1587	Carthage College	Kenosha	WI	USA
+1590	St. Mary's College of Maryland	St. Mary's City	MD	USA
+1876	Osaka University of Commerce	Osaka	(null)	Japan
+2249	University of Groningen	Groningen	(null)	The Netherlands
+3075	University of the District of Columbia	Washington	DC	USA
+7948	Federal Reserve Bank of Kansas City	Kansas City	MO	USA
+7974	Meiji University	Tokyo	(null)	Japan
+10304	Winston-Salem State University	Winston-Salem	NC	USA
+11080	Soka University of America	Aliso Viejo	CA	USA
+11226	Statewide California Electronic Library Consortium	Los Angels	CA	USA
+11277	Kingsborough Community College	Brooklyn	NY	USA
+11302	Reinhardt College	Waleska	GA	USA
+11830	Abt Associates Incorporated	Cambridge	MA	USA
+1	University of California at Los Angeles	Los Angeles	CA	USA
+20	University of Rochester	Rochester	NY	USA
+25	University of Wisconsin at Madison	Madison	WI	USA
+28	University of Georgia	Athens	GA	USA
+33	University of Kentucky	Lexington	KY	USA
+37	Pennsylvania State University	University Park	PA	USA
+61	Johns Hopkins University	Baltimore	MD	USA
+74	Northern Illinois University	DeKalb	IL	USA
+86	University of Miami	Coral Gables	FL	USA
+117	University of Southern California	Los Angeles	CA	USA
+122	Erasmus University Rotterdam	Rotterdam	(null)	The Netherlands
+131	Miami University	Oxford	OH	USA
+134	Emory University	Atlanta	GA	USA
+154	Brown University	Providence	RI	USA
+179	Bryn Mawr College	Bryn Mawr	PA	USA
+200	Texas State University at San Marcos	San Marcos	TX	USA
+220	Southern Illinois University at Edwardsville	Edwardsville	IL	USA
+244	Queens College (Flushing, NY)	Flushing	NY	USA
+257	Massachusetts Institute of Technology	Cambridge	MA	USA
+316	New School University	New York	NY	USA
+348	Depauw University	Greencastle	IN	USA
+512	Bard College	Annandale on Hudson	NY	USA
+547	Birmingham Southern College	Birmingham	AL	USA
+571	University of Winnipeg	Winnipeg	MB	Canada
+758	DePaul University	Chicago	IL	USA
+765	Minnesota State University, Mankato	Mankato	MN	USA
+948	Berea College	Berea	KY	USA
+1068	Colorado State University	Fort Collins	CO	USA
+1191	York University	Toronto, Ontario M3J 1P3	ON	Canada
+1708	University of North Florida	Jacksonville	FL	USA
+1845	Memorial University of Newfoundland	St. John's	NEWFOUNDLAND	CANADA
+3042	Meisei University	Tokyo	(null)	Japan
+8626	Lycoming College	Williamsport	PA	USA
+11224	National Assembly Budget Office	Seoul	(null)	Korea
+11272	New York City College of Technology	Brooklyn	NY	USA
+11790	Vilnius University	Vilnius	(null)	Lithuania
+14052	Keimyung University	Dalseo-gu	Daegu	SOUTH KOREA
+30	University of Pittsburgh	Pittsburgh	PA	USA
+120	University of Oklahoma	Norman	OK	USA
+192	University of Houston	Houston	TX	USA
+193	Mississippi State University	Mississippi State	MS	USA
+218	Cornell University	Ithaca	NY	USA
+240	Herbert H. Lehman College	Bronx	NY	USA
+243	State University of New York at Binghamton	Binghamton	NY	USA
+272	Brigham Young University	Provo	UT	USA
+274	University of Arkansas at Fayetteville	Fayetteville	AR	USA
+295	Ohio University	Athens	OH	USA
+296	Williams College	Williamstown	MA	USA
+307	Loyola College	Baltimore	MD	USA
+338	University of Maine at Orono	Orono	ME	USA
+355	Ursinus College	Collegeville	PA	USA
+405	University of Regina	Regina, Saskatchewan	SK	Canada
+406	University of Saskatchewan	Saskatoon, Saskatchewan	SK	Canada
+526	Christopher Newport University	Newport News	VA	USA
+656	University of Massachusetts at Lowell	Lowell	MA	USA
+1053	Randolph-Macon College	Ashland	VA	USA
+1527	Ritsumeikan University	Kyoto	(null)	Japan
+1554	Bilkent University	Ankara	(null)	Turkey
+2110	Austin Peay State University	Clarksville	TN	USA
+2599	Florida Gulf Coast University	Fort Myers	FL	USA
+2675	Institut D`Etudes Politiques (France)	Paris	(null)	France
+3044	University of Alaska Anchorage	Anchorage	AK	USA
+3427	University of Seoul	Seoul	(null)	South Korea
+6573	Vrije Universiteit of Amsterdam	Amsterdam	(null)	The Netherlands
+7949	Instituto Superior das Ciencias do Trabalho e da Empresa (ISCTE)	1600 Lisboa	(null)	Portugal
+8662	Utah Valley University	Orem	UT	USA
+10003	Kyushu University	Fukuoka	(null)	Japan
+10279	University of Redlands	Redlands	CA	USA
+10419	Chonnam National University	Gwangju City	(null)	South Korea
+11222	California State University Channel Islands	Camarillo	CA	USA
+11300	University of Ontario Institute of Technology	Oshawa	ON	Canada
+11337	Sungkyunkwan University	Seoul	(null)	South Korea
+12190	Federal Reserve Board of Governors	Washington	DC	USA
+12610	Siauliai University	Siauliai	(null)	LITHUANIA
+14310	Centro de Ciencias Humanas y Sociales	Madrid	(null)	SPAIN
+47	Temple University	Philadelphia	PA	USA
+128	University of Tilburg	5037 AB Tilburg	(null)	The Netherlands
+130	Smith College	Northampton	MA	USA
+142	Lehigh University	Bethlehem	PA	USA
+248	West Virginia University	Morgantown	WV	USA
+262	Utah State University	Logan	UT	USA
+310	Bates College	Lewiston	ME	USA
+401	Hong Kong University of Science and Technology	Kowloon	(null)	Hong Kong
+609	University of Illinois at Springfield	Springfield	IL	USA
+634	Towson University	Towson	MD	USA
+643	United States Air Force Academy	USAFA	CO	USA
+840	Wilfrid Laurier University	Waterloo Ontario	ON	Canada
+979	Loyola University New Orleans	New Orleans	LA	USA
+1100	Yeungnam University	Gyeongsan	(null)	Korea
+1172	James Madison University	Harrisonburg	VA	USA
+1367	Whitman College	Walla Walla	WA	USA
+1396	Radford University	Radford	VA	USA
+1403	Kenyon College	Gambier	OH	USA
+1565	Universite de Moncton	Moncton	NB	Canada
+1774	Southern Connecticut State University	New Haven	CT	USA
+1825	Universita degli Studi di Milano	20122 Milano	(null)	Italy
+2088	University of the West Indies	Kingston	(null)	Jamaica
+2322	Grove City College	Grove City	PA	USA
+8605	Carroll College (Montana Federation)	Helena	MT	USA
+9325	Delta State University	Cleveland	MS	USA
+11203	Hyogo University of Teacher Education	Hyogo	(null)	Japan
+12211	University College Cork	Cork	(null)	IRELAND
+12530	Harris-Stowe State University	St. Louis	MO	USA
+12611	Mykolas Romeris University	Vilnius	(null)	LITHUANIA
+12710	University of Houston - Downtown	Houston	TX	USA
+12950	Senshu University	Kanagawa	214-8580	JAPAN
+13510	Federal University of Pernambuco (UFPE)	Recife	(null)	Brazil
+10	University of California at Berkeley	Berkeley	CA	USA
+26	Yale University	New Haven	CT	USA
+27	Stanford University	Stanford	CA	USA
+60	Sonoma State University	Rohnert Park	CA	USA
+82	Florida International University	Miami	FL	USA
+110	College of Wooster	Wooster	OH	USA
+133	Dartmouth College	Hanover	NH	USA
+168	Central Michigan University	Mt Pleasant	MI	USA
+177	University of Texas at Arlington	Arlington	TX	USA
+196	Iowa State University	Ames	IA	USA
+197	Southern Methodist University	Dallas	TX	USA
+225	City College	New York	NY	USA
+249	Auburn University at Auburn	Auburn	AL	USA
+250	State University of New York at Stony Brook	Stony Brook	NY	USA
+267	University of Texas at Austin	Austin	TX	USA
+275	Brandeis University	Waltham	MA	USA
+286	Northeastern University	Boston	MA	USA
+300	University of Rhode Island	Kingston	RI	USA
+304	University of California at San Francisco	San Francisco	CA	USA
+312	Wichita State University	Wichita	KS	USA
+353	University of Louisville	Louisville	KY	USA
+360	Saint Cloud State University	Saint Cloud	MN	USA
+377	University of Mary Washington	Fredericksburg	VA	USA
+398	California State University at San Marcos	San Marcos	CA	USA
+504	Catholic University of America	Washington	DC	USA
+530	Georgia Southern University	Statesboro	GA	USA
+593	University of California at Riverside	Riverside	CA	USA
+629	Loyola Marymount University	Los Angeles	CA	USA
+730	University of New Hampshire	Durham	NH	USA
+1063	Morgan State University	Baltimore	MD	USA
+1491	West Chester University	West Chester	PA	USA
+1597	Finnish National Membership	Tampere	(null)	Finland
+1906	University of Leiden	Leiden	(null)	The Netherlands
+1951	Federal Reserve Bank of Philadelphia	Philadelphia	PA	USA
+2025	University of Montreal	Montreal	QC	Canada
+2129	University of Ghent	Ghent	(null)	Belgium
+7280	Dublin City University	Dublin	(null)	IRELAND
+9982	City University of Hong Kong	Hong Kong	(null)	CHINA
+11365	Sejong University	Seoul	(null)	Korea
+12351	Hiram College	Hiram	OH	USA
+13250	Walsh University	North Canton	OH	USA
+17	California State University at Fresno	Fresno	CA	USA
+32	University of British Columbia	Vancouver, British Columbia	BC	Canada
+39	Duke University	Durham	NC	USA
+62	Western Kentucky University	Bowling Green	KY	USA
+85	Bowling Green State University	Bowling Green	OH	USA
+94	McGill University	Montreal	QC	Canada
+96	Tulane University	New Orleans	LA	USA
+97	Oberlin College	Oberlin	OH	USA
+102	Grinnell College	Grinnell	IA	USA
+106	Lawrence University	Appleton	WI	USA
+116	UK Data Archive at University of Essex	Essex	(null)	United Kingdom
+123	University of Missouri at St. Louis	St. Louis	MO	USA
+183	Villanova University	Villanova	PA	USA
+198	Claremont Colleges	Claremont	CA	USA
+209	Old Dominion University	Norfolk	VA	USA
+264	University of Alabama at Tuscaloosa	Tuscaloosa	AL	USA
+280	Wabash College	Crawfordsville	IN	USA
+289	George Mason University	Fairfax	VA	USA
+299	University of North Dakota	Grand Forks	ND	USA
+318	University of Alabama at Birmingham	Birmingham	AL	USA
+323	Wake Forest University	Winston-Salem	NC	USA
+324	University of Puget Sound	Tacoma	WA	USA
+343	Virginia Commonwealth University	Richmond	VA	USA
+369	Oregon State University	Corvallis	OR	USA
+642	Drew University	Madison	NJ	USA
+693	London School of Economics	London	(null)	United Kingdom
+828	Auburn University at Montgomery	Mongomery	AL	USA
+893	Millikin University	Decatur	IL	USA
+1021	Bentley College	Waltham	MA	USA
+1076	Saint Louis University	St. Louis	MO	USA
+1096	Federal Reserve Bank of New York	New York	NY	USA
+1307	Presbyterian College	Clinton	SC	USA
+1401	University of Missouri at Kansas City	Kansas City	MO	USA
+1460	Knox College	Galesburg	IL	USA
+1474	University of Manitoba	Winnipeg, Manitoba	MB	Canada
+1508	Saginaw Valley State University	University Center	MI	USA
+1552	Chuo University	Tokyo	(null)	Japan
+1923	Gakushuin University	Toyko	(null)	Japan
+3086	Kookmin University	Seoul	(null)	South Korea
+6706	Waseda University	Shinjuku	(null)	Japan
+7025	University of the Witwatersrand	Johannesburg	(null)	South Africa
+7379	University of Cape Town	PVT Bag, Rondebosch 7700	(null)	South Africa
+7523	Vytautas Magnus University	Kaunas	(null)	LITHUANIA
+7967	Fundacion Banco Bilbao Vizcaya Argentaria (BBVA)	28001 Madrid	(null)	Spain
+9334	Hamline University	St. Paul	MN	USA
+10222	University of North Carolina at Asheville	Asheville	NC	USA
+11116	Federal Reserve Bank of St. Louis	St. Louis	MO	USA
+11273	Queensborough Community College	Bayside	NY	USA
+11450	Sabanci University	Istanbul	(null)	Turkey
+13770	Fielding Graduate University	Santa Barbara	CA	USA
+14070	St. Louis College of Pharmacy	St. Louis	MO	USA
+14571	Kyungsung University	Nam-gu	Busan 608-736	SOUTH KOREA
+2	California State University at Bakersfield	Bakersfield	CA	USA
+40	University of Missouri at Columbia	Columbia	MA	USA
+43	Syracuse University	Syracuse	NY	USA
+46	California State University at Northridge	Northridge	CA	USA
+52	California State University at San Bernardino	San Bernardino	CA	USA
+84	Florida State University	Tallahassee	FL	USA
+199	University of New Mexico	Albuquerque	NM	USA
+201	Texas A&M University	College Station	TX	USA
+202	University of New Orleans	New Orleans	LA	USA
+210	University of Texas at San Antonio	San Antonio	TX	USA
+223	Baruch College	New York	NY	USA
+281	Boston College	Chestnut Hill	MA	USA
+282	National Chengchi University	Chi-nan Rd., Taipei 116	(null)	Taiwan
+329	University of North Carolina at Greensboro	Greensboro	NC	USA
+342	Saint Anselm College	Manchester	NH	USA
+359	Minnesota State University Moorhead	Moorhead	MN	USA
+436	Rollins College	Winter Park	FL	USA
+445	The Sejong Institute	Sungnam	(null)	Korea
+503	Drake University	Des Moines	IA	USA
+510	Oakland University	Rochester	MI	USA
+532	Pepperdine University	Malibu	CA	USA
+536	Sam Houston State University	Huntsville	TX	USA
+572	Hobart and William Smith Colleges	Geneva	NY	USA
+658	Wheaton College (Massachusetts)	Norton	MA	USA
+909	University of St. Thomas	St. Paul	MN	USA
+970	University of North Carolina at Wilmington	Wilmington	NC	USA
+1059	Trinity University	San Antonio	TX	USA
+1373	St. Lawrence University	Canton	NY	USA
+1446	Federal Reserve Bank of Chicago	Chicago	IL	USA
+1562	Bogazici University	Istanbul	(null)	Turkey
+1602	Instituto Juan March de Estudios e Investigaciones	Madrid	(null)	Spain
+1889	Hitotsubashi University	Tokyo	(null)	Japan
+1978	Universita degli Studi del Molise	86100 Campobasso	(null)	Italy
+6820	Osaka University	Osaka	(null)	Japan
+7910	Nanyang Technological University	Singapore 639798	(null)	Singapore
+10005	Nagoya University	Nagoya University	(null)	JAPAN
+10299	Oklahoma Christian University	Oklahoma City	OK	USA
+10322	University of West Georgia	Carrollton	GA	USA
+11184	Singapore Management University	Singapore	(null)	Singapore
+11288	Meharry Medical College	Nashville	TN	USA
+11430	Catholic University of Daegu	Gyeongbuk	(null)	Korea
+11771	Kaunas University of Technology	Kaunas	(null)	Lithuania
+13351	Hankuk University of Foreign Studies	Seoul	(null)	KOREA
+13530	International Christian University	Tokyo	(null)	JAPAN
