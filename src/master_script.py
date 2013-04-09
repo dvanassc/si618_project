@@ -9,3 +9,6 @@ execfile('load_university_ips.py')
 
 ## 2 - Load web logs
 execfile('load_weblog.py')
+
+## 3 - Load studies
+execfile('load_studies.py')
