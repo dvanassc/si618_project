@@ -9,7 +9,7 @@ select distinct c.name,
         count(*)
 from weblog_downloads wl, country_ips ci, countries c
 where wl.long_ip = ci.long_ip and ci.country_id = c.id and
-(browser_type like 'Mozilla%' or browser_type like 'Opera%' or browser_type like 'Nokia%' or browser_type like 'BlackBerry%') and
+(browser_type like 'Mozilla%' or browser_type like 'Opera%' or browser_type like 'Safari%' or browser_type like 'Nokia%' or browser_type like 'BlackBerry%') and
 (browser_type not like '%Yandex%' and browser_type not like '%spider%' and browser_type not like '%Babya Discover%'
 and browser_type not like '%bot%' and browser_type not like '%Daumoa%' and browser_type not like '%crawler%' and browser_type not like '%LinkCheck%'
 and browser_type not like '%WebCorp%' and browser_type not like '%Yahoo! Slurp%' and browser_type not like '%Genieo%')
