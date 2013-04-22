@@ -48,6 +48,7 @@ log.entries$abbr <- factor(log.entries$abbr)
 log.entries$format <- factor(log.entries$format)
 log.entries$accessor <- factor(log.entries$accessor)
 log.entries$institution <- factor(log.entries$institution)
+log.entries = subset(log.entries, accessor = 'Human')
 log.entries.nona = subset(log.entries, !(is.na(abbr)))
 
 # Listing top 5 statistical package downloads by country...

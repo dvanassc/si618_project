@@ -47,7 +47,8 @@ log.entries$format <- factor(log.entries$format)
 log.entries$accessor <- factor(log.entries$accessor)
 log.entries$institution <- factor(log.entries$institution)
 
-# All statistical packages used overall, color-coded by country...
+# All statistical packages used by humans overall, color-coded by country...
+log.entries = subset(log.entries, accessor = 'Human')
 ggplot(log.entries, aes(format, colour = abbr, fill = abbr)) +
         geom_histogram() + ylab("Count") + xlab("Format") +
         labs(title = "Overall Downloads by Format") + 
