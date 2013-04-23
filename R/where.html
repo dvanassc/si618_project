@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>ICPSR Weblog Analysis - Where are people accessing the ICPSR web site from?</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>ICPSR Weblog Analysis - Where are people accessing the ICPSR web site from?</h1>
+
+<h2>Maps</h2>
+
+<h3>Page Requests Worldwide (Bot vs. Human)</h3>
+
+<p>This map displays one month&#39;s worth of page requests for the ICPSR website. Each dot represents a single row in the table and a single page request. The colors on the map distinguish between human and bot requests. Though the map shows that human requests predominate, the data itself skews in favor of bots - due primarily to the high volume of bot requests generated in Ann Arbor by ICPSR staff. This visualization glosses over this location-specific complexity, but provides a clear overall picture of site accesses.</p>
+
+<ul>
+<li>For the code for this map, see: <a href="http://link.to.file">Map #1 in si618_maps.R</a></li>
+<li>For the output of this code (PDF), see: <a href="https://ctools.umich.edu/access/content/group/0929c341-b2de-44aa-a7ca-6224d65e341d/Project%20resources/Web%20Log%20Analysis/maps_pageviews_world_botvhuman.pdf">Page Requests Worldwide (Bot vs. Human)</a></li>
+</ul>
+
+<h3>Downloads Worldwide (Bot vs. Human)</h3>
+
+<p>This map, showing downloads for both bots and humans worldwide, provides comparison with the previous map that focused on page views. From this visualization, we can see that the majority of the downloads occurring in this month originated in eastern United States and Western Europe. According to traffic this month, non-US bot downloads happen relatively infrequently.</p>
+
+<ul>
+<li>For the code for this map, see: <a href="http://link.to.file">Map #2 in si618_maps.R</a></li>
+<li>For the output of this code (PDF), see: <a href="https://ctools.umich.edu/access/content/group/0929c341-b2de-44aa-a7ca-6224d65e341d/Project%20resources/Web%20Log%20Analysis/maps_downloads_world_botvhuman.pdf">Downloads Worldwide (Bot vs. Human)</a></li>
+</ul>
+
+<h3>Downloads per Classification (Human Only) - World</h3>
+
+<p>This world map includes a plot overlay of downloads colored by their primary classification. An interpretation of the graph reveals a fairly even distribution of downloads of different classifications.</p>
+
+<ul>
+<li>For the code for this map, see: <a href="http://link.to.file">Map #3 in si618_maps.R</a></li>
+<li>For the output of this code (PDF), see: <a href="https://ctools.umich.edu/access/content/group/0929c341-b2de-44aa-a7ca-6224d65e341d/Project%20resources/Web%20Log%20Analysis/maps_downloads_classification_humanonly.pdf">Downloads per Classification (Human Only)</a></li>
+</ul>
+
+<h3>Downloads per Classification (Human Only) - USA</h3>
+
+<p>Due to the high concentration of downloads in the United States, we wanted to zero in on that geographic area. This map shows the geographic origin of downloads, colored according to the classification of the study downloaded. As the worldwide version seemed to indicate, the distribution of color across the points seems to reveal no discernable pattern. Instead, the classification types of the downloads appears varied across the board.</p>
+
+<ul>
+<li>For the code for this map, see: <a href="http://link.to.file">Map #4 in si618_maps.R</a></li>
+<li>For the output of this code (PDF), see: <a href="https://ctools.umich.edu/access/content/group/0929c341-b2de-44aa-a7ca-6224d65e341d/Project%20resources/Web%20Log%20Analysis/maps_downloads_classification_humanonly_usa.pdf">Downloads per Classification (Human Only) - USA</a></li>
+</ul>
+
+<h3>Page Requests per Classification (Human Only) - World</h3>
+
+<p>This world map includes a plot overlay of page requests colored by their primary classification. An interpretation of the graph reveals a fairly even distribution of page views of different classifications.</p>
+
+<ul>
+<li>For the code for this map, see: <a href="http://link.to.file">Map #5 in si618_maps.R</a></li>
+<li>For the output of this code (PDF), see: <a href="https://ctools.umich.edu/access/content/group/0929c341-b2de-44aa-a7ca-6224d65e341d/Project%20resources/Web%20Log%20Analysis/maps_pageviews_classification_humanonly.pdf">Page Requests per Classification (Human Only, World)</a></li>
+</ul>
+
+<h3>Pageviews per Classification (Human Only) - USA</h3>
+
+<p>Due to the high concentration of pageviews in the United States, we wanted to zero in on that geographic area. This map shows the geographic origin of pageviews, colored according to the classification of the study viewed. As the worldwide version seemed to indicate, the distribution of color across the points seems to reveal no discernable pattern. Instead, the classification types of the pageviews appears varied across the board.</p>
+
+<ul>
+<li>For the code for this map, see: <a href="http://link.to.file">Map #6 in si618_maps.R</a></li>
+<li>For the output of this code (PDF), see: <a href="https://ctools.umich.edu/access/content/group/0929c341-b2de-44aa-a7ca-6224d65e341d/Project%20resources/Web%20Log%20Analysis/maps_pageviews_classification_humanonly_usa.pdf">Pageviews per Classification (Human Only) - USA</a></li>
+</ul>
+
+<h3>Page Request Concentrations - World (Humans Only)</h3>
+
+<p>To provide a quick view of page request frequency within individual countries, we created this map that shades countries according to the number of page requests originating within the country. As seen in other graphs, the United States accounts for the vast majority of these requests worldwide, followed distantly by the UK and Canada.</p>
+
+<ul>
+<li>For the code for this map, see: <a href="http://link.to.file">Map #7 in si618_maps.R</a></li>
+<li>For the output of this code (PDF), see: <a href="https://ctools.umich.edu/access/content/group/0929c341-b2de-44aa-a7ca-6224d65e341d/Project%20resources/Web%20Log%20Analysis/maps_pageviews_humanonly_shading.pdf">Page Request Concentrations - World (Humans Only)</a></li>
+</ul>
+
+<h3>Download Concentrations - World (Humans Only)</h3>
+
+<p>To provide a quick view of download frequency within individual countries, we created this map that shades countries according to the number of downloads originating within the country. As seen in other graphs, the United States accounts for the vast majority of these requests worldwide, followed distantly by the UK and Canada.</p>
+
+<ul>
+<li>For the code for this map, see: <a href="http://link.to.file">Map #8 in si618_maps.R</a></li>
+<li>For the output of this code (PDF), see: <a href="https://ctools.umich.edu/access/content/group/0929c341-b2de-44aa-a7ca-6224d65e341d/Project%20resources/Web%20Log%20Analysis/maps_downloads_humanonly_shading.pdf">Download Concentrations - World (Humans Only)</a></li>
+</ul>
+
+<h3>Page Request Concentrations - World (Humans Only, No USA)</h3>
+
+<p>By removing the USA counts from the dataset, we obtained a clearer map of distribution among the remaining countries with respect to pageviews. This map shows that the UK, Canada, Chile, Germany, and China all have significant counts - meaning that more requests for ICPSR pages were made from those locations during this month.</p>
+
+<ul>
+<li>For the code for this map, see: <a href="http://link.to.file">Map #9 in si618_maps.R</a></li>
+<li>For the output of this code (PDF), see: <a href="https://ctools.umich.edu/access/content/group/0929c341-b2de-44aa-a7ca-6224d65e341d/Project%20resources/Web%20Log%20Analysis/maps_pageviews_humanonly_shading_nousa.pdf">Page Request Concentrations - World (Humans Only, No USA)</a></li>
+</ul>
+
+<h3>Download Concentrations - World (Humans Only, No USA)</h3>
+
+<p>By removing the USA counts from the dataset, we obtained a clearer map of distribution among the remaining countries with respect to downloads. This map shows that the UK, Canada, Chile, Germany, and China all have significant counts - meaning that more downloads from the ICPSR site were made from those locations during this month.</p>
+
+<ul>
+<li>For the code for this map, see: <a href="http://link.to.file">Map #10 in si618_maps.R</a></li>
+<li>For the output of this code (PDF), see: <a href="https://ctools.umich.edu/access/content/group/0929c341-b2de-44aa-a7ca-6224d65e341d/Project%20resources/Web%20Log%20Analysis/maps_downloads_humanonly_shading_nousa.pdf">Download Concentrations - World (Humans Only, No USA)</a></li>
+</ul>
+
+<h2>Stat Package Format Histograms</h2>
+
+<h3>Top 5 statistical package format downloads by country:</h3>
+
+<p>Creates a histogram showing the top 5 countries who downloaded each format, along with a histogram showing the breakdown of download formats for each of these top 5 countries.</p>
+
+<pre><code>## Error: RS-DBI driver: (error in statement: no such table:
+## weblog_downloads)
+</code></pre>
+
+<pre><code>## Error: object &#39;log.entries&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;log.entries&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;log.entries&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;log.entries&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;log.entries&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;log.entries&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;log.entries&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;log.entries.nona&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;stat.package.summary&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;log.entries&#39; not found
+</code></pre>
+
+<h3>Top 5 statistical package format downloads by institution/university:</h3>
+
+<p>Creates a histogram showing the top 5 institutions who downloaded each format, along with a histogram showing the breakdown of download formats for each of these top 5 institutions.</p>
+
+<pre><code>## Error: object &#39;log.entries&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;log.entries.nona.inst&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;stat.package.summary&#39; not found
+</code></pre>
+
+<pre><code>## Error: object &#39;log.entries&#39; not found
+</code></pre>
+
+</body>
+
+</html>
+

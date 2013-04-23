@@ -73,108 +73,71 @@ Stat Package Format Histograms
 
 Creates a histogram showing the top 5 countries who downloaded each format, along with a histogram showing the breakdown of download formats for each of these top 5 countries.
 
-```{r echo=FALSE}
-library(DBI)
-library(RSQLite)
-library(ggplot2)
-library(plyr)
 
-
-# Connect to the database...
-driver<-dbDriver("SQLite")
-connect<-dbConnect(driver, dbname = "../db/weblogs.db")
-
-# Retrieve all weblog entries for stat package reports and define factors...
-log.entries = dbGetQuery(connect, "
-select wl.timestamp, u.name as institution, c.name as country, c.abbr as abbr, wl.study, wl.browser_type,
-    case
-        when wl.format like '%spss%' then 'SPSS'
-        when wl.format like '%stata%' then 'STATA'
-        when wl.format like '%sas%' then 'SAS'
-        when wl.format = 'ascii' or wl.format = 'delimited' or wl.format = 'other' then 'DELIMITED'
-        else wl.format
-    end as format,
-    case
-        when (browser_type like 'Mozilla%' or browser_type like 'Opera%' or browser_type like 'Safari%' or browser_type like 'Nokia%' or browser_type like 'BlackBerry%') and
-             (browser_type not like '%Yandex%' and browser_type not like '%spider%' and browser_type not like '%Babya Discover%'
-              and browser_type not like '%bot%' and browser_type not like '%Daumoa%' and browser_type not like '%crawler%' and browser_type not like '%LinkCheck%'
-              and browser_type not like '%WebCorp%' and browser_type not like '%Yahoo! Slurp%' and browser_type not like '%Genieo%') then 'Human'
-        when browser_type like '%CopperEgg%' or browser_type like '%InterMapper%' then 'ICPSR-Bot'
-        else 'Bot'
-    end as accessor
-from weblog_downloads wl left outer join country_ips ci on wl.long_ip = ci.long_ip
-                         left outer join countries c on ci.country_id = c.id
-                         left outer join university_ips ui on (wl.abyte = ui.abyte and wl.bbyte = ui.bbyte and wl.cbyte = ui.cbyte and wl.dbyte >= ui.dbyte1 and wl.dbyte <= ui.dbyte2)
-                         left outer join universities u on ui.university_id = u.id
-")
-
-log.entries$country <- factor(log.entries$country)
-log.entries$abbr <- factor(log.entries$abbr)
-log.entries$format <- factor(log.entries$format)
-log.entries$accessor <- factor(log.entries$accessor)
-log.entries$institution <- factor(log.entries$institution)
-log.entries = subset(log.entries, accessor = 'Human')
-log.entries.nona = subset(log.entries, !(is.na(abbr)))
-
-# Listing top 5 statistical package downloads by country...
-stat.package.summary = ddply(log.entries.nona, c("country", "format"), summarise,
-                             count = length(country))
-stat.package.summary = stat.package.summary[order(stat.package.summary$count,
-                                                  decreasing= TRUE),]
-for (f in levels(log.entries$format)) {
-  stat.package.summary.format = subset(stat.package.summary, format == f)
-  stat.package.summary.format = head(stat.package.summary.format, 5)
-  stat.package.summary.format <- stat.package.summary.format[
-    order(stat.package.summary.format$count, decreasing = TRUE),]
-  stat.package.summary.format$country <- reorder(
-    stat.package.summary.format$country, -stat.package.summary.format$count)
-  plot.title <- paste("Top Downloaders of ", f, sep="")
-  print(ggplot(stat.package.summary.format, aes(country, count)) +
-          geom_histogram(stat="identity") + ylab("Count") + xlab("Country") +
-          labs(title = plot.title) +
-          theme(axis.text.x=element_text(angle=45, hjust=1)))
-  idx <- 1
-  for (c in stat.package.summary.format$country) {
-    log.entries.subset = subset(log.entries, country == c)
-    plot.title <- paste("Top Downloaders of ", f, " (", idx, "):  ", c, sep="")
-    print(ggplot(log.entries.subset, aes(format, colour = format, fill = format)) +
-            geom_histogram() + ylab("Count") + xlab("Format") +
-            labs(title = plot.title))
-    idx <- idx+1
-  }
-}
 ```
+## Error: RS-DBI driver: (error in statement: no such table:
+## weblog_downloads)
+```
+
+```
+## Error: object 'log.entries' not found
+```
+
+```
+## Error: object 'log.entries' not found
+```
+
+```
+## Error: object 'log.entries' not found
+```
+
+```
+## Error: object 'log.entries' not found
+```
+
+```
+## Error: object 'log.entries' not found
+```
+
+```
+## Error: object 'log.entries' not found
+```
+
+```
+## Error: object 'log.entries' not found
+```
+
+```
+## Error: object 'log.entries.nona' not found
+```
+
+```
+## Error: object 'stat.package.summary' not found
+```
+
+```
+## Error: object 'log.entries' not found
+```
+
 
 ### Top 5 statistical package format downloads by institution/university:
 
 Creates a histogram showing the top 5 institutions who downloaded each format, along with a histogram showing the breakdown of download formats for each of these top 5 institutions.
 
-```{r echo=FALSE}
-# Listing top 5 statistical package downloads by institution...
-log.entries.nona.inst = subset(log.entries, !(is.na(institution)))
-stat.package.summary = ddply(log.entries.nona.inst, c("institution", "format"), summarise, count = length(institution))
-stat.package.summary = stat.package.summary[order(stat.package.summary$count, decreasing= TRUE),]
-for (f in levels(log.entries$format)) {
-  stat.package.summary.format = subset(stat.package.summary, format == f)
-  stat.package.summary.format = head(stat.package.summary.format, 5)
-  stat.package.summary.format <- stat.package.summary.format[
-    order(stat.package.summary.format$count, decreasing = TRUE),]
-  stat.package.summary.format$institution <- reorder(
-    stat.package.summary.format$institution, -stat.package.summary.format$count)
-  plot.title <- paste("Top Downloaders of ", f, sep="")
-  print(ggplot(stat.package.summary.format, aes(institution, count)) +
-          geom_histogram(stat="identity") + ylab("Count") + xlab("Institution") +
-          labs(title = plot.title) +
-          theme(axis.text.x=element_text(angle=45, hjust=1)))
 
-  idx <- 1
-  for (i in stat.package.summary.format$institution) {
-    log.entries.subset = subset(log.entries, institution == i)
-    plot.title <- paste("Top Downloaders of ", f, " (", idx, "):  ", i, sep="")
-    print(ggplot(log.entries.subset, aes(format, colour = format, fill = format)) +
-            geom_histogram() + ylab("Count") + xlab("Format") +
-            labs(title = plot.title))
-    idx <- idx+1
-  }
-}
 ```
+## Error: object 'log.entries' not found
+```
+
+```
+## Error: object 'log.entries.nona.inst' not found
+```
+
+```
+## Error: object 'stat.package.summary' not found
+```
+
+```
+## Error: object 'log.entries' not found
+```
+
