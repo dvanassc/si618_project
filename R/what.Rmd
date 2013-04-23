@@ -77,3 +77,84 @@ ggplot(log.entries.nous, aes(format, colour = abbr, fill = abbr)) +
   labs(title = "Download Format by Country ('US' Excluded)") + 
   guides(col=guide_legend(ncol=3, byrow=T))
 ```
+
+Popular topics visited and downloaded
+--------------------------------------------------------
+
+Each study is classified under 1 or 2 topics from a 20-topic classification scheme.  Here, we examine which topics receive the most homepage hits and downloads, generated only by humans (that is, excluding bots). We order the topics in descending order according to the number of studies classified under that topic. Unsurprisingly, the classification with the most studies and the most homepage hits is "Social Instutitions and Behavior." Interestingly, the "Social Indicators" topic has a median number of studies classified under it, yet it also has the second highest number of homepage hits. This result suggests that the relatively few number of studies under this topic are very popular.
+
+``` {r echo=FALSE, include=FALSE, warning=FALSE}
+connect<-dbConnect(driver, dbname = "../db/weblogs.db")
+log.entries = dbGetQuery(connect, "
+select wl.study, class.description, class.code, wl.browser_type,
+    case
+        when (browser_type like 'Mozilla%' or browser_type like 'Opera%' or browser_type like 'Safari%' or browser_type like 'Nokia%' or browser_type like 'BlackBerry%') and
+             (browser_type not like '%Yandex%' and browser_type not like '%spider%' and browser_type not like '%Babya Discover%'
+              and browser_type not like '%bot%' and browser_type not like '%Daumoa%' and browser_type not like '%crawler%' and browser_type not like '%LinkCheck%'
+              and browser_type not like '%WebCorp%' and browser_type not like '%Yahoo! Slurp%' and browser_type not like '%Genieo%') then 'human'
+        else 'bot'
+    end as accessor
+from weblog_downloads wl left outer join classifications class on wl.study = class.study_id")
+
+log.entries.home = dbGetQuery(connect, "
+select wl.study, class.description, class.code, wl.browser_type,
+    case
+        when (browser_type like 'Mozilla%' or browser_type like 'Opera%' or browser_type like 'Safari%' or browser_type like 'Nokia%' or browser_type like 'BlackBerry%') and
+             (browser_type not like '%Yandex%' and browser_type not like '%spider%' and browser_type not like '%Babya Discover%'
+              and browser_type not like '%bot%' and browser_type not like '%Daumoa%' and browser_type not like '%crawler%' and browser_type not like '%LinkCheck%'
+              and browser_type not like '%WebCorp%' and browser_type not like '%Yahoo! Slurp%' and browser_type not like '%Genieo%') then 'human'
+        else 'bot'
+    end as accessor
+from weblog_homepages wl left outer join classifications class on wl.study = class.study_id")
+
+library(ggplot2)
+library(plyr)
+library(stringr)
+library(reshape)
+library(scales)
+
+# Prepping main downloads table 
+log.entries$majorcode=substr(log.entries$code,1,regexpr("([^XVI]|$)??",log.entries$code)-1)
+log.entries$majordesc=substr(log.entries$description,1,regexpr("(,|$)??",log.entries$description)-1)
+log.entries$majordesc[log.entries$majorcode=="I"]="Census Enumerations"
+log.entries$majordesc=factor(log.entries$majordesc)
+
+# Prepping main homepages table
+log.entries.home$majorcode=substr(log.entries.home$code,1,regexpr("([^XVI]|$)??",log.entries.home$code)-1)
+log.entries.home$majordesc=substr(log.entries.home$description,1,regexpr("(,|$)??",log.entries.home$description)-1)
+log.entries.home$majordesc[log.entries.home$majorcode=="I"]="Census Enumerations"
+log.entries.home$majordesc=factor(log.entries.home$majordesc)
+
+
+# Number of studies listed under each classification
+class.data=dbGetQuery(connect, "SELECT code, description, study_id FROM classifications")
+class.data$majorcode=substr(class.data$code,1,regexpr("([^XVI]|$)??",class.data$code)-1)
+class.data$majordesc=substr(class.data$description,1,regexpr("(,|$)??",class.data$description)-1)
+class.data$majordesc[class.data$majorcode=="I"]="Census Enumerations"
+class.data$majordesc=factor(class.data$majordesc)
+class.sums=ddply(class.data, c("majorcode","majordesc"), summarise, study_count=length(study_id))
+
+# Number of downloads per classification, humans only
+class.downloads=subset(log.entries, accessor=="human")
+class.downloads=ddply(log.entries, c("majorcode"), summarise, down_count=length(study))
+
+# Number of homepage hits per classification, humans only
+class.home=subset(log.entries.home, accessor=="human") 
+class.home=ddply(log.entries.home, c("majorcode"), summarise, home_count=length(study))
+
+# Merging
+class.downloads.n=merge(class.downloads, class.sums, by.x="majorcode", by.y="majorcode")
+class.home.n=merge(class.home, class.sums, by.x="majorcode", by.y="majorcode")
+```
+
+```{r echo=FALSE, message=FALSE, fig.width=9}
+p1=ggplot(class.home.n, aes(reorder(majordesc, -study_count), home_count))+geom_bar(stat="identity", alpha=I(.5))+theme(axis.text.x = element_text(angle=45, hjust=1), axis.title.x = element_text(size = 16), axis.title.y=element_text(size=16), plot.title=element_text(size=24), axis.text.x=element_text(size=14))+xlab("Classfication")+ylab("Number of Homepage hits")+ggtitle("Number of Homepage Hits Generated by Humans\n within each Classification")
+print(p1)  
+```
+
+We created a similar plot as above, examining number of downloads instead of homepage hits. Again, the classifications are ordered in descending order according to the number of studies classified under that topic. The results here are interesting -- by far, the largest number of downloads is from the "Social Institutions and Behavior" category, which is also the category with the most studies classified under it. Also, again, "Social Indicators" sticks out as a topic with a number of downloads consistent with classifications that have a greater number of studies. This result further speaks to the popularity of the individual studies within this classification.
+
+```{r echo=FALSE, message=FALSE, fig.width=9}
+p2=ggplot(class.downloads.n, aes(reorder(majordesc, -study_count), down_count))+geom_bar(stat="identity", alpha=I(.5))+theme(axis.text.x = element_text(angle=45, hjust=1), axis.title.x = element_text(size = 16), axis.title.y=element_text(size=16), plot.title=element_text(size=24), axis.text.x=element_text(size=14))+xlab("Classfication")+ylab("Number of Downloads")+ggtitle("Number of Downloads Generated by Humans\n within each Classification")
+print(p2)  
+```
