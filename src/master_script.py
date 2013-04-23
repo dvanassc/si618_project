@@ -15,3 +15,6 @@ execfile('load_studies.py')
 
 ## 4 - Load web logs
 execfile('load_weblog.py')
+
+## 5 - Stem search terms
+execfile('search_term_stem.py')
